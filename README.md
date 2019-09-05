@@ -5,11 +5,11 @@ Unfortunately, from time to time the VATSIM METAR server goes down. This project
 ## Usage
 
 Simply replace the standard ATIS generator URL:
-`
-http://uniatis.net/atis.php?arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode&metar=$metar($atisairport)
-`
+
+`http://uniatis.net/atis.php?arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode&metar=$metar($atisairport)`
 
 With the following (changes in bold):
+
 **<span>http</span>://path-to-src.com/?icao=\$atisairport&**`arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode`
 Ensure you remove the `&metar=$metar($atisairport)` section.
 
