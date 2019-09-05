@@ -1,0 +1,14 @@
+{
+    "name": "cobaltgrid/vatatis",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Toff",
+            "email": "me@alextoff.uk"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
