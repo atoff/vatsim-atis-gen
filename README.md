@@ -11,7 +11,9 @@ Simply replace the standard ATIS generator URL:
 With the following (changes in bold):
 
 **<span>http</span>://path-to-src.com/?icao=\$atisairport&**`arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode`
-Ensure you remove the `&metar=$metar($atisairport)` section.
+
+
+Ensure you remove the `&metar=$metar($atisairport)` section, as this won't work when the VATSIM server is down.
 
 You can still use all the fancy bells and whistles of uniatis, just add them as normal!
 
