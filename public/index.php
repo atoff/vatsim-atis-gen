@@ -10,7 +10,7 @@ if(!isset($_GET['icao'])){
 
 $airportIcao = $_GET['icao'];
 
-if (!preg_match('/[^A-Za-z]/', $airportIcao) || strlen($airportIcao) != 4) {
+if (preg_match('/[^A-Za-z]/', $airportIcao) || strlen($airportIcao) != 4) {
     echo "Please supply a valid airport ICAO";
     die();
 }
