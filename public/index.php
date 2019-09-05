@@ -4,11 +4,16 @@ require('../vendor/autoload.php');
 
 
 if(!isset($_GET['icao'])){
-    echo "Please supply an airport ICAO";
+    echo "Please supply a airport ICAO";
     die();
 }
 
 $airportIcao = $_GET['icao'];
+
+if (!preg_match('/[^A-Za-z]/', $airportIcao) || strlen($airportIcao) != 4) {
+    echo "Please supply a valid airport ICAO";
+    die();
+}
 
 
 $client = new \GuzzleHttp\Client();
